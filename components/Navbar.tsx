@@ -107,24 +107,25 @@ export default function Navbar() {
 
 {menuOpen && (
   <div
-  className="
-    lg:hidden
-    absolute
-    top-20
-    right-4
-    w-[78%]
-    max-w-[340px]
-    rounded-2xl
-    border
-    border-black/5
-    bg-white/10
-    backdrop-blur-3xl
-    shadow-[0_20px_40px_rgba(0,0,0,.12)]
-    px-3
-    py-3
-  "
+ className="
+lg:hidden
+fixed
+top-16
+right-3
+left-3
+z-[9998]
+rounded-2xl
+border
+border-black/5
+bg-white/10
+backdrop-blur-3xl
+shadow-[0_20px_40px_rgba(0,0,0,.12)]
+p-3
+max-h-[calc(100vh-90px)]
+overflow-y-auto
+"
 >
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col gap-2">
 
       {navItems.map((item) => (
         <a
@@ -139,7 +140,7 @@ items-center
 justify-center
 w-full
 px-5
-py-4
+py-2.5
 rounded-xl
 border
 border-black/10
@@ -147,7 +148,7 @@ bg-white/8
 backdrop-blur-[25px]
 text-[#2711B1]
 font-medium
-text-lg
+text-[17px]
 shadow-[0_8px_20px_rgba(0,0,0,0.04)]
 transition-all
 duration-300
@@ -197,7 +198,7 @@ hover:bg-[#2711B1]/8
     mt-3
     w-full
     px-5
-    py-4
+    py-2.5
     rounded-xl
     bg-[#2711B1]
     text-white
